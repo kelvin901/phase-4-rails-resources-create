@@ -6,6 +6,14 @@ class BirdsController < ApplicationController
     render json: birds
   end
 
+    # POST /birds
+    def create
+      byebug
+    end
+  
+    # etc
+  end
+
   # GET /birds/:id
   def show
     bird = Bird.find_by(id: params[:id])
